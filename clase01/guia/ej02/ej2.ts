@@ -1,0 +1,9 @@
+
+var nombreMeses : string[] = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+for(let i : number = 1; i <= 12 ; i++)
+{
+    console.log("Mes: " +nombreMeses[i-1]+ ". Número: " + i);
+}
+                            
+
