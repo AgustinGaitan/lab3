@@ -6,7 +6,7 @@ var cadena : string = "Jorge";
 
 
 
-var funcion : Function = (parametro_numerico : number, parametro_cadena : string) => {
+var funcion : Function = (parametro_numerico : number, parametro_cadena : string) : void => {
 
     if(!parametro_cadena){
 
