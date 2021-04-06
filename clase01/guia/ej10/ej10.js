@@ -1,5 +1,6 @@
 "use strict";
 function MostrarInformacion(cadena) {
+    cadena = cadena.replace(/\s/g, "");
     var contMin = 0;
     var contMay = 0;
     for (var i = 0; i < cadena.length; i++) {
@@ -23,4 +24,5 @@ function MostrarInformacion(cadena) {
 console.log(MostrarInformacion("Jorge"));
 console.log(MostrarInformacion("ROBERTO"));
 console.log(MostrarInformacion("karen"));
+console.log(MostrarInformacion(" c a   v  a"));
 //# sourceMappingURL=ej10.js.map

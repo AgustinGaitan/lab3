@@ -1,6 +1,7 @@
 
 function MostrarInformacion(cadena : string) : string 
-{
+{   
+    cadena = cadena.replace(/\s/g,"");  //para sacar los espacios
     var contMin : number = 0;
     var contMay : number = 0;
 
@@ -38,3 +39,4 @@ function MostrarInformacion(cadena : string) : string
 console.log(MostrarInformacion("Jorge"));
 console.log(MostrarInformacion("ROBERTO"));
 console.log(MostrarInformacion("karen"));
+console.log(MostrarInformacion(" c a   v  a"));
