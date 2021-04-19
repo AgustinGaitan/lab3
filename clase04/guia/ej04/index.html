@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="final.js"></script>
+    <title>Calculadora</title>
+</head>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+            <table>
+                <td>
+
+                    <input type ="text" name="primerOperando" id="primerOperando">
+                    <input type ="text" name="segundoOperando" id="segundoOperando">
+                    <select name="operador" id="operador">
+                        <option name="suma">+</option>
+                        <option name="resta">-</option>
+                        <option name="division">/</option>
+                        <option name="multiplicacion">*</option>
+                    </select>
+                </td>
+                    <td colspan="2">
+                        <input type="button" onclick="ClickPost()" value="Calcular">
+                    </td>
+                    <td>
+                        <span id="spanResultado"></span>
+                    </td>
+                    
+
+            </table>
+            
+
+        </form>
+    </body>
+</html>
