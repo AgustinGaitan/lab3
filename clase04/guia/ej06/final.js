@@ -21,3 +21,14 @@ var Ajax = /** @class */ (function () {
     }
     return Ajax;
 }());
+///// <reference path="ajax.ts" />
+var ajax = new Ajax();
+function Verificar() {
+    //let nombre = (<HTMLInputElement>document.getElementById("txtNombreUser")).value;
+    //let parametros = `nombreUser=${nombre}`;
+    ajax.Post("comprobarDisponibilidad.php", Exito);
+}
+function Exito(rtaServidor) {
+    document.getElementById("spanJorge").innerHTML = rtaServidor;
+    console.log(rtaServidor);
+}

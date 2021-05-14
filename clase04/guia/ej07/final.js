@@ -21,3 +21,22 @@ var Ajax = /** @class */ (function () {
     }
     return Ajax;
 }());
+///// <reference path="ajax.ts" />
+var ajax = new Ajax();
+function Verificar() {
+    //let nombre = (<HTMLInputElement>document.getElementById("txtNombreUser")).value;
+    //let parametros = `nombreUser=${nombre}`;
+    ajax.Post("comprobarDisponibilidad.php", Exito);
+}
+function Exito(rtaServidor) {
+    document.getElementById("idDiv").innerHTML = rtaServidor;
+    console.log(rtaServidor);
+}
+function CambiarInput() {
+    //let i : number = 0;
+    var id = "id";
+    for (var i = 0; i < 5; i++) {
+        id += i;
+        var input = document.getElementById("txtNombreUser").value = document.getElementById(id).innerText;
+    }
+}
